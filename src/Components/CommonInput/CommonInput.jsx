@@ -1,12 +1,23 @@
 import React from "react";
-import {StyleCommonInput, } from "./Styles";
+import PropTypes from "prop-types";
+import {StyleCommonInput } from "./Styles";
 
-function CommonInput({placeholder, ...props}) {
+function CommonInput({type, register, placeholder}) {
     return (
-            <StyleCommonInput placeholder = {placeholder} {...props}/>
+        <StyleCommonInput 
+        type = {type} 
+        placeholder={placeholder}
+        {...register}/>
     );
 }
 
+CommonInput.propTypes = {
+    type: PropTypes.string,
+    register: PropTypes.object,
+    placeholder: PropTypes.string,
+};
+
 export default CommonInput;
+
 
 

@@ -3,40 +3,42 @@ import api from "./api";
 
 //USUARIOS
 export async function GetUsuario () {
-    const {data} = api.get(`/usuarios`);
+    const {data} = await api.get(`/usuarios`);
     return data;
 }
 export async function CreateUsuario (body) {
-    const {data} = api.post(`/usuarios`, body);
+    console.log("cheguei no endpoint");
+    const {data} = await api.post(`/usuarios`, body);
+    console.log("oi");
     return data;
 }
 export async function UpdateUsuario (id, body) {
-    const {data} = api.put(`/usuarios/:${id}`, body);
+    const {data} = await api.put(`/usuarios/:${id}`, body);
     return data;
 }
 export async function DeleteUsuario (id) {
-    const {data} = api.delete(`/usuarios/:${id}`);
+    const {data} = await api.delete(`/usuarios/:${id}`);
     return data;
 }
 
 
 //SESSOES
 export async function GetSessoes () {
-    const {data} = api.get("/sessoes");
+    const {data} = await api.get("/sessoes");
     return data;
 }
 export async function CreateSessoes (body) {
-    const {data} = api.post(`/sessoes/:`, body);
+    const {data} = await api.post(`/sessoes/:`, body);
     return data;
 }
 export async function DeleteSessoes (id) {
-    const {data} = api.delete(`/sessoes/:${id}`);
+    const {data} = await api.delete(`/sessoes/:${id}`);
     return data;
 }
 
 
 //LOGIN
 export async function CreateAuth (body) {
-    const {data} = api.post(`/login`, body);
+    const {data} = await api.post(`/login`, body);
     return data;
 }
