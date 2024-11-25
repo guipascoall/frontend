@@ -24,7 +24,7 @@ function Cadastro () {
     function response(data){
         console.log("cheguei na func");
         postUsuario(data);
-        //navigate("/login");
+        navigate("/login");
     }
 
     return (
@@ -36,7 +36,7 @@ function Cadastro () {
                 <CommonInput placeholder = "E-mail" register = {register("email")} type="email"/>
                 <CommonInput placeholder = "Cargo" register = {register("cargo")}/>
                 <CommonInput placeholder = "Senha" register = {register("senha")} type="password"/>
-                <CommonInput placeholder = "Repita sua senha" register = {register("repita")} type="password"/>
+                <CommonInput placeholder = "Repita sua senha" register = {register("status")} type="password"/>
                 {/*<input  placeholder = "Cargo" {...register("cargo")}/>
                 <input  placeholder = "Senha" type = "password" {...register("senha")}/>
                 <input  placeholder = "Repita sua senha" type = "password" {...register("repita")}/>*/}
