@@ -9,8 +9,7 @@ function Home(){
     return(
         <Container>
             <StyledForm>
-                <h1> HOME
-                    </h1>
+            
                 <BotaoPadrao onClick={()=> navigate("/cadastro")}> 
                 IR PARA CADASTRO
                 </BotaoPadrao>

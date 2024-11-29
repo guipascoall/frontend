@@ -1,15 +1,6 @@
 import styled from "styled-components";
 
 
-// Estilo para o contêiner que alinha os inputs na vertical
-//export const InputContainer = styled.div`
-
-  //flex-direction: column; /* Alinha os inputs verticalmente */
- /* Ajusta a largura conforme o contêiner pai */
-/* Centraliza os inputs horizontalmente */
-
-//`;
-
 export const StyleCommonInput = styled.input`
     
     width: 55vh;

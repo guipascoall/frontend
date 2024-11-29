@@ -25,8 +25,9 @@ function Login(){
             <Tittle>LOGIN</Tittle>
             <StyledForm onSubmit={handleSubmit(response)}>
                 
+                
                 <CommonInput placeholder = "E-mail" register = {register("email")} type="email"/>
-                <CommonInput type = "password" {...register("senha")} placeholder = "Senha" />
+                <CommonInput placeholder = "Senha" register = {register("senha")} type="password"/>
 
                 <p>
                     Não tem login? Faça seu cadastro 

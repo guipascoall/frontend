@@ -7,9 +7,8 @@ export async function GetUsuario () {
     return data;
 }
 export async function CreateUsuario (body) {
-    console.log("cheguei no endpoint");
     const {data} = await api.post(`/usuarios`, body);
-    console.log("oi");
+    console.log(data);
     return data;
 }
 export async function UpdateUsuario (id, body) {

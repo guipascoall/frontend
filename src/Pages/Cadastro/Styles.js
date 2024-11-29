@@ -11,6 +11,7 @@ export const Container = styled.div`
 export const StyledForm = styled.form`
     display:flex;
     flex-direction: column;
+    align-items: center;
     gap: 10px;
 `
 export const Tittle = styled.h1`

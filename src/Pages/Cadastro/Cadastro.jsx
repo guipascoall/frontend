@@ -22,7 +22,6 @@ function Cadastro () {
 
     //ONSUBMIT
     function response(data){
-        console.log("cheguei na func");
         postUsuario(data);
         navigate("/login");
     }

@@ -11,11 +11,12 @@ export const Container = styled.div`
 export const StyledForm = styled.form`
     display:flex;
     flex-direction: column;
+    align-items: center;
     gap: 10px;
 `
 
 export const Tittle = styled.h1`
-    margin-bottom: 13vh;
+    margin-bottom: 9vh;
     font-weight: bold;
     color: #FFE712; /* Cor do texto */
     font-size: 40px; /* Ajuste o tamanho da fonte conforme necessário */
